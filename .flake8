@@ -1,0 +1,10 @@
+[flake8]
+ignore =
+  E122,
+  E123,
+  E501,
+  E731
+exclude =
+  build,
+  .venv/
+# max-complexity = 10

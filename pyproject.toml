@@ -1,0 +1,48 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "kliento"
+version = "0.0.1"
+description = "HTTP client from scratch"
+# readme = "README.md"
+license = "BSD-3-Clause"
+authors = [{name = "Dimitri Merejkowsky", email = "dimitri@dmerej.info"}]
+requires-python = ">= 3.11"
+
+[project.urls]
+# repository = ""
+# changelog = ""
+# issues = ""
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+packages = [
+    "kliento",
+    "tests",
+]
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+    # Add here packages to ignore
+]
+ignore_missing_imports = true
+
+
+[tool.poetry.group.dev.dependencies]
+# Tests
+pytest = "^9.0.2"
+pytest-cov = "^7.0.0"
+
+# Linters
+black = "^26.1.0"
+flake8 = "^7.3.0"
+flake8-bugbear = "^25.11.29"
+flake8-comprehensions = "^3.17.0"
+pep8-naming = "^0.15.1"
+isort = "^8.0.0"
+mypy = "^1.19.1"

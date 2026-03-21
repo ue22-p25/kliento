@@ -1,0 +1,10 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v3.0.3
+_src_path: https://codeberg.org/your-tools/copier-python.git
+author_email: dimitri@dmerej.info
+author_name: Dimitri Merejkowsky
+package_import_name: kliento
+project_description: HTTP client from scratch
+project_name: kliento
+project_version: 0.0.1
+
